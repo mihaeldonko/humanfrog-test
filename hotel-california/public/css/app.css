@@ -1,0 +1,35 @@
+.room-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.room-img img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.room-img:hover img {
+    filter: brightness(50%);
+    transform: scale(1.1); 
+}
+
+.icon-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-decoration: none;
+}
+
+.room-img:hover .icon-overlay {
+    opacity: 1;
+}
+
+.card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
